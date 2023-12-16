@@ -5,6 +5,53 @@ import { promisify } from 'util';
 
 const execAsync = promisify(exec);
 
+interface CpuInfo {
+  usage: string;
+  total: string;
+  cores: number[];
+}
+
+interface RamInfo {
+  usage: string;
+  total: string;
+  free: string;
+  used: string;
+}
+
+interface DiskInfo {
+  usage: string;
+  total: string;
+}
+
+interface OsInfo {
+  platform: string;
+  distro: string;
+  release: string;
+  codename: string;
+  kernel: string;
+  arch: string;
+  codepage: string;
+  logofile: string;
+  uptime: number;
+}
+
+interface NetworkInfo {
+  ip4: string;
+  ip6: string;
+  fqdn: string;
+  iface: string;
+}
+
+export interface SystemInfo {
+  resources: {
+    cpu: CpuInfo;
+    ram: RamInfo;
+    disk: DiskInfo;
+  };
+  osInfo: OsInfo;
+  network: NetworkInfo;
+}
+
 @Injectable()
 export class SysInfoService {
   private async getDiskUsage(): Promise<string> {
@@ -13,15 +60,6 @@ export class SysInfoService {
       return stdout.trim();
     } catch (error) {
       throw new Error('Error getting disk usage');
-    }
-  }
-
-  private async getNetworkConfig(): Promise<string> {
-    try {
-      const { stdout } = await execAsync("ip a");
-      return stdout.trim();
-    } catch (error) {
-      throw new Error('Error getting network config');
     }
   }
 
@@ -67,7 +105,7 @@ export class SysInfoService {
     };
   }
 
-  public async getSystemInfo(): Promise<any> {
+  public async getSystemInfo(): Promise<SystemInfo> {
     try {
       const cpuLoad = await si.currentLoad();
       const cpuData = await si.cpu();
@@ -75,9 +113,7 @@ export class SysInfoService {
       const cpu = {
         usage: cpuLoad.currentLoad.toFixed(0) + '%',
         total: `${cpuData.cores} x ${cpuData.speed}GHz`,
-        cores: cpuLoad.cpus.map(core => ({
-          load: core.load.toFixed(0) + '%'
-        }))
+        cores: cpuLoad.cpus.map(core => parseFloat(core.load.toFixed(0)))
       };
 
       const mem = await si.mem();
