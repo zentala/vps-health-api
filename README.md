@@ -1,4 +1,4 @@
-# VPS API Monitoring [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
+# VPS Health Monitoring API [![stability-stable](https://img.shields.io/badge/stability-stable-green.svg)](https://github.com/emersion/stability-badges#stable)
 
 Welcome to the VPS API Monitoring repository. This project is designed as a server-side solution for monitoring VPS resources, providing detailed data to integrate with Backstage.io for a comprehensive overview of both the server and its services.
 
