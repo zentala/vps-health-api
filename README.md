@@ -26,8 +26,8 @@ The VPS API Monitoring tool offers a robust and efficient way to monitor your VP
 
 | Category    | Technology  |
 | :---------- | :---------- |
-| Environment | ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=nodedotjs&logoColor=white) &nbsp; ![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white) |
-| Backend     | ![NestJS](https://img.shields.io/badge/-NestJS-ea2845.svg?logo=nestjs) &nbsp; ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
+| Environment | ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=nodedotjs&logoColor=white) &nbsp; ![Yarn](https://img.shields.io/badge/-Yarn-2C8EBB?logo=yarn&logoColor=white) |
+| Backend     | ![NestJS](https://img.shields.io/badge/-NestJS-ea2845.svg?logo=nestjs) &nbsp; ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) &nbsp; ![Swagger](https://img.shields.io/badge/-Swagger-85EA2D?logo=swagger&logoColor=white) |
 | Code Quality | ![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?logo=eslint&logoColor=white) &nbsp; ![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=black) |
 | IDE         | ![Visual Studio Code](https://img.shields.io/badge/-VisualStudioCode-007ACC?logo=visualstudiocode&logoColor=white) |
 
@@ -80,6 +80,10 @@ Build the project with:
 ```bash
 yarn run build
 ```
+
+## 📖 API Documentation
+
+The interactive API documentation provided by Swagger is available at [http://localhost:3000/api-docs/](http://localhost:3000/api-docs/). 
 
 ## 📚 Versioning
 We use [Semantic Versioning](https://semver.org/) for version management.

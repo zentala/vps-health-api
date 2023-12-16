@@ -54,15 +54,6 @@ export interface SystemInfo {
 
 @Injectable()
 export class SysInfoService {
-  private async getDiskUsage(): Promise<string> {
-    try {
-      const { stdout } = await execAsync("df -h | awk '{if($(NF) == \"/\") {print $(NF-1); exit;}}' | rev | cut -c 2- | rev");
-      return stdout.trim();
-    } catch (error) {
-      throw new Error('Error getting disk usage');
-    }
-  }
-
   private async getNetworkDetails(): Promise<any> {
     const networkInterfaces = await si.networkInterfaces();
     const networkStats = await si.networkStats();
@@ -129,7 +120,6 @@ export class SysInfoService {
       const uptime = si.time().uptime;
       const network = await this.getNetworkDetails();
       const fullOsInfo = await si.osInfo();
-      const { ip4, ip6 } = await this.getNetworkDetails();
 
       const {
         serial, build, servicepack, uefi, hostname, fqdn, ...osInfo
