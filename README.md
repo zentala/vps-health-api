@@ -14,13 +14,22 @@ The VPS API Monitoring tool offers a robust and efficient way to monitor your VP
 
 ## 📊 Code Quality Status
 
-[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=bugs)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=your_project_key)
-[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=your_project_key&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=your_project_key)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=bugs)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=zentala_vps-health-api&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=zentala_vps-health-api)
+
+## 📚 Technical Stack Overview
+
+| Category    | Technology  |
+| :---------- | :---------- |
+| Environment | ![Node.js](https://img.shields.io/badge/-Node.js-339933?logo=nodedotjs&logoColor=white) &nbsp; ![npm](https://img.shields.io/badge/-npm-CB3837?logo=npm&logoColor=white) |
+| Backend     | ![NestJS](https://img.shields.io/badge/-NestJS-ea2845.svg?logo=nestjs) &nbsp; ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) |
+| Code Quality | ![ESLint](https://img.shields.io/badge/-ESLint-4B32C3?logo=eslint&logoColor=white) &nbsp; ![Prettier](https://img.shields.io/badge/-Prettier-F7B93E?logo=prettier&logoColor=black) |
+| IDE         | ![Visual Studio Code](https://img.shields.io/badge/-VisualStudioCode-007ACC?logo=visualstudiocode&logoColor=white) |
 
 ## 🚀 Getting Started
 

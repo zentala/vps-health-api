@@ -9,7 +9,7 @@ import { SysCtlModule } from './sysctl/sysctl.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
-      isGlobal: true, // Opcjonalnie, jeśli chcesz, aby był dostępny globalnie
+      isGlobal: true,
     }),
     SysinfoModule, 
     SysCtlModule
